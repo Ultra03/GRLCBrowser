@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="jquery-3.3.1.min.js"></script>
+		<title> GRLC Browser </title>
+		<style>
+			#ifrm {
+				width: 100%;
+				height: 100%;
+			}
+			iframe {
+				width: 100%;
+				height: 100%;
+				border: 2px solid red;
+			}
+			.iframe {
+				width: 100%;
+				height: 100%;
+			}
+			div {
+				width: 100%;
+				border: 2px solid black;
+			}
+			/* DIV and IFRM sizing needs a Band-aid */
+		</style>
+		<script>
+			// Auto Size Adjustment Needs a Banda-id
+			var html = document.documentElement;
+			var height = $(window).height();
+			
+			document.getElementById("diiv").setAttribute("style","height: " + height + "px;");
+		</script>
+	</head>
+	<body>
+		<div id="diiv">
+		<iframe src="https://garli.co.in/" id="ifrm" class="iframe">
+			<h4> Ummm... </h4>
+			<br />
+			<h5> Seems your browser can't handle us. Upgrade Chrome? </h5>
+		</iframe>
+		</div>
+	</body>
+</html>
