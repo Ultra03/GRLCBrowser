@@ -12,7 +12,7 @@
 			iframe {
 				width: 100%;
 				height: 100%;
-				border: 2px solid red;
+				border: 2px solid black;
 			}
 			.iframe {
 				width: 100%;
@@ -20,6 +20,7 @@
 			}
 			div {
 				width: 100%;
+				height: 100%;
 				border: 2px solid black;
 			}
 			/* DIV and IFRM sizing needs a Band-aid */
@@ -28,8 +29,9 @@
 			// Auto Size Adjustment Needs a Banda-id
 			var html = document.documentElement;
 			var height = $(window).height();
-			
+
 			document.getElementById("diiv").setAttribute("style","height: " + height + "px;");
+			document.getElementById("ifrm").setAttribute("style","height: " + height + "px;");
 		</script>
 	</head>
 	<body>
